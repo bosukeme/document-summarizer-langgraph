@@ -1,0 +1,25 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	splitter(splitter)
+	chunk_summarizer(chunk_summarizer)
+	merger(merger)
+	formatter_narrative(formatter_narrative)
+	formatter_bullet(formatter_bullet)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> splitter;
+	chunk_summarizer --> merger;
+	merger -. &nbsp;bullets&nbsp; .-> formatter_bullet;
+	merger -. &nbsp;narrative&nbsp; .-> formatter_narrative;
+	splitter --> chunk_summarizer;
+	formatter_bullet --> __end__;
+	formatter_narrative --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+
+classDef default fill:#000000,stroke:#ffffff,        stroke-width:1px,font-size:18px;
