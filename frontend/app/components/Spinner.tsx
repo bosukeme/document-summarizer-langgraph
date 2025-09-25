@@ -1,4 +1,3 @@
-// components/Spinner.tsx
 "use client";
 
 export default function Spinner({ size = 5, color = "text-white" }) {

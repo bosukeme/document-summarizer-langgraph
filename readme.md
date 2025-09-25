@@ -35,6 +35,13 @@ A LangChain integration that connects to OpenAI’s models. It allows you to plu
 - **Frontend** : Next.js 14, React, Tailwind CSS.
 - **Utilities** : Mermaid for diagrams, CORS for API calls.
 
+
+#### Clone the repository
+```sh
+git clone https://github.com/bosukeme/document-summarizer-langgraph.git
+cd document-summarizer
+```
+
 ## Backend Setup (FastAPI)
 
 1. Navigate to backend:
@@ -111,6 +118,14 @@ Open API docs:
 3. Choose summary style (Narrative or Bullets).
 4. Click **Upload & Summarize** .
 5. Copy result with **📋 Copy** button.
+
+
+## Starting with Docker
+To start both servers at once, you can use
+```sh
+docker-compose up --build
+```
+Once its up and running, you can view it on `http://localhost:3000`
 
 ## Architecture
 
